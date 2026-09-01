@@ -1,0 +1,1496 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+/* =========================
+   BASE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Quicksand, Arial, sans-serif;
+    color: #5b3048;
+    background: #fff6fb;
+}
+
+
+/* =========================
+   BARRA DE NAVEGAÇÃO
+========================= */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    background: #fff;
+    box-shadow: 0 2px 15px #d9a9c055;
+}
+
+.logo {
+    font-weight: 700;
+    color: #d64b88;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #633c51;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #633c51;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #df4f91;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    background: linear-gradient(135deg, #fff7fc, #ffd8e9);
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.eyebrow {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #df4f91;
+}
+
+h1 {
+    font-size: clamp(45px, 7vw, 88px);
+    line-height: .92;
+    margin: 15px 0;
+    color: #4d293d;
+}
+
+h1 span {
+    color: #df4f91;
+}
+
+h2 {
+    font-size: 42px;
+    margin: 8px 0 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 24px;
+    border-radius: 30px;
+    background: #df4f91;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 7px 18px #df4f9155;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.secondary {
+    background: #633c51;
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-card {
+    width: 300px;
+    height: 330px;
+    border-radius: 25px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 15px 20px 45px #b85a7b33;
+    transform: rotate(3deg);
+}
+
+.hero-heart {
+    font-size: 120px;
+    color: #df4f91;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.section > p:not(.eyebrow) {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.cards article {
+    background: #fff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #b85a7b22;
+}
+
+.character-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.character-card article {
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.character-card:hover article {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px #b85a7b44;
+}
+
+
+/* =========================
+   RETRATOS
+========================= */
+
+.portrait {
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.portrait img {
+    max-width: 100%;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Fundos individuais */
+
+.portrait.vyuri {
+    background-image: url("assets/bg/vyuri_room.jpeg");
+}
+
+.portrait.kaori {
+    background-image: url("assets/bg/quarto_kaori.webp");
+}
+
+.portrait.bertsuki {
+    background-image: url("assets/bg/bertsuki_room.png");
+}
+
+.portrait.wonika {
+    background-image: url("assets/bg/wonika_room.jpeg");
+}
+
+
+/* =========================
+   DOWNLOAD
+========================= */
+
+.download {
+    text-align: center;
+    padding: 100px 10%;
+    background: #633c51;
+    color: #fff;
+}
+
+.download .eyebrow {
+    color: #ff9fc4;
+}
+
+.download h2 {
+    color: #fff;
+}
+
+.downloads {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download small {
+    display: block;
+    margin-top: 30px;
+    opacity: .7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #472738;
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/* =========================
+   LORE
+========================= */
+
+.lore-button {
+    color: #df4f91;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.lore-hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #fff7fc, #ffd8e9);
+}
+
+.lore-hero h1 {
+    font-size: clamp(60px, 10vw, 120px);
+    margin: 10px 0;
+}
+
+.lore-hero p {
+    font-size: 20px;
+}
+
+.lore-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.lore-content p {
+    line-height: 1.8;
+}
+
+
+/* =========================
+   SPOILER
+========================= */
+
+.spoiler-button {
+    margin-top: 45px;
+    padding: 30px 70px;
+    border-radius: 15px;
+    background: #633c51;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px #633c5155;
+    transition: .2s;
+}
+
+.spoiler-button:hover {
+    transform: scale(1.05);
+    background: #df4f91;
+}
+
+.spoiler-button span {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   NEGUINHO
+========================= */
+
+.neguinho {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    width: 80px;
+    height: auto;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.neguinho-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background: #fff6fb;
+}
+
+.neguinho-page h1 {
+    font-size: clamp(25px, 5vw, 55px);
+    color: #df4f91;
+}
+
+.neguinho-grande {
+    max-width: 500px;
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+
+/* =========================
+   PÁGINA DO WONIKA
+========================= */
+
+.pagina-wonika {
+    margin: 40px;
+}
+
+.titulo-wonika {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-wonika {
+    width: 200px;
+    height: auto;
+    transform: translateY(-70px);
+}
+
+.pagina-wonika p {
+    transform: translateY(-80px);
+    font-size: 32px
+}
+
+.pagina-wonika h1 {
+    transform: translateY(-120px);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    .topbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero-card {
+        width: 250px;
+        height: 270px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+}
+/* =========================
+PÁGINA DE EMPRESAS
+========================= */
+
+.empresas-page {
+background: #fff6fb;
+}
+
+.empresas-hero {
+min-height: 60vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 80px 10%;
+background: linear-gradient(135deg, #fff7fc, #ffd8e9);
+}
+
+.empresas-hero h1 {
+font-size: clamp(50px, 8vw, 100px);
+}
+
+.empresas-hero p:not(.eyebrow) {
+max-width: 700px;
+font-size: 19px;
+}
+
+/* LISTA DE EMPRESAS */
+
+.empresas-lista {
+max-width: 1200px;
+margin: auto;
+padding: 80px 10%;
+}
+
+/* CARD DA EMPRESA */
+
+.empresa {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+
+```
+margin-bottom: 60px;
+padding: 50px;
+
+background: white;
+border-radius: 25px;
+
+box-shadow: 0 10px 30px #b85a7b22;
+```
+
+}
+
+.empresa-info {
+flex: 1;
+}
+
+.empresa-info h2 {
+font-size: 38px;
+}
+
+.empresa-info p {
+line-height: 1.7;
+}
+
+/* TIPO DA EMPRESA */
+
+.empresa-tipo {
+font-size: 12px;
+letter-spacing: 3px;
+font-weight: 700;
+color: #df4f91;
+}
+
+/* DETALHES */
+
+.empresa-detalhes {
+display: flex;
+gap: 30px;
+flex-wrap: wrap;
+
+```
+margin: 30px 0;
+```
+
+}
+
+.empresa-detalhes div {
+display: flex;
+flex-direction: column;
+}
+
+.empresa-detalhes strong {
+color: #df4f91;
+}
+
+.empresa-detalhes span {
+font-size: 14px;
+}
+
+/* LOGO DA EMPRESA */
+
+.empresa-logo {
+min-width: 250px;
+height: 250px;
+
+```
+display: flex;
+flex-direction: column;
+
+align-items: center;
+justify-content: center;
+
+text-align: center;
+
+border-radius: 25px;
+
+color: white;
+```
+
+}
+
+.empresa-logo h3 {
+font-size: 90px;
+margin: 0;
+}
+
+.empresa-logo p {
+font-weight: 700;
+letter-spacing: 2px;
+}
+
+/* JOSÉ MIGUEL EMPRESAS */
+
+.jose-logo {
+background: linear-gradient(
+135deg,
+#d64b88,
+#633c51
+);
+}
+
+/* KENEDY CORPORATION */
+
+.kenedy-logo {
+background: linear-gradient(
+135deg,
+#2c2c3a,
+#6a6a8a
+);
+}
+
+/* EMPRESA SECRETA */
+
+.empresa-secreta {
+opacity: 0.8;
+}
+
+.secreto-logo {
+background: #1b1b1b;
+}
+
+.empresa-bloqueada {
+padding: 14px 25px;
+
+```
+border: none;
+border-radius: 20px;
+
+background: #333;
+color: #888;
+
+font-weight: 700;
+
+cursor: not-allowed;
+```
+
+}
+
+/* AVISO FINAL */
+
+.empresas-aviso {
+padding: 100px 10%;
+
+```
+text-align: center;
+
+background: #633c51;
+color: white;
+```
+
+}
+
+.empresas-aviso h2 {
+color: white;
+}
+
+.empresas-aviso p:not(.eyebrow) {
+max-width: 600px;
+margin: auto;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 800px) {
+
+```
+.empresa {
+    flex-direction: column;
+    text-align: center;
+}
+
+.empresa-logo {
+    min-width: 100%;
+}
+
+.empresa-detalhes {
+    justify-content: center;
+}
+```
+
+}
+.jose-logo {
+    background: none;
+}
+
+.jose-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* =========================
+   PÁGINA DO VYURI
+========================= */
+
+.pagina-vyuri {
+    margin: 40px;
+}
+
+.titulo-vyuri {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto-vyuri {
+    width: 200px;
+    height: auto;
+}
+
+.pagina-vyuri p {
+    transform: translateY(-30px);
+}
+.pagina-personagem {
+    margin: 40px;
+}
+
+.titulo-personagem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto-personagem {
+    width: 200px;
+    height: auto;
+}
+
+.pagina-personagem p {
+    transform: translateY(-30px);
+}
+/* =========================
+   CRÉDITOS
+========================= */
+
+.creditos-page {
+    background: #fff6fb;
+}
+
+.creditos-hero {
+    min-height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #fff7fc,
+        #ffd8e9
+    );
+}
+
+.creditos-hero h1 {
+    font-size: clamp(60px, 10vw, 120px);
+}
+
+.creditos-hero p:not(.eyebrow) {
+    font-size: 20px;
+}
+
+
+/* LISTA */
+
+.creditos-lista {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 80px 10%;
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        2,
+        1fr
+    );
+
+    gap: 25px;
+}
+
+
+/* CARDS */
+
+.credito-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px #b85a7b22;
+
+    text-align: center;
+}
+
+.credito-card h2 {
+    color: #df4f91;
+}
+
+.credito-card h3 {
+    font-size: 24px;
+}
+
+.credito-card p {
+    line-height: 1.6;
+}
+
+
+/* CARD ESPECIAL */
+
+.credito-card.especial {
+    grid-column: span 2;
+
+    background: #633c51;
+
+    color: white;
+}
+
+.credito-card.especial h2 {
+    color: #ff9fc4;
+}
+
+.pequeno {
+    font-size: 13px;
+
+    opacity: 0.7;
+
+    margin-top: 20px;
+}
+
+
+/* FINAL */
+
+.creditos-final {
+    text-align: center;
+
+    padding: 100px 10%;
+
+    background: linear-gradient(
+        135deg,
+        #ffd8e9,
+        #fff7fc
+    );
+}
+
+.creditos-final p {
+    font-size: 18px;
+
+    margin-bottom: 25px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .creditos-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .credito-card.especial {
+        grid-column: span 1;
+    }
+
+}
+/* =========================
+   PÁGINAS DE PERSONAGENS
+========================= */
+
+.personagem-page {
+    background: #fff6fb;
+}
+
+
+/* HERO */
+
+.personagem-hero {
+    min-height: 75vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    padding: 70px 12%;
+
+    background: linear-gradient(
+        135deg,
+        #fff7fc,
+        #ffd8e9
+    );
+}
+
+.personagem-texto {
+    max-width: 600px;
+}
+
+.personagem-texto h1 {
+    font-size: clamp(60px, 9vw, 110px);
+}
+
+.personagem-apelido {
+    font-size: 22px;
+    font-weight: 700;
+    color: #df4f91;
+}
+
+.personagem-descricao {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* IMAGEM */
+
+.personagem-imagem {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.personagem-imagem img {
+    width: min(350px, 30vw);
+    max-height: 500px;
+
+    object-fit: contain;
+}
+
+
+/* INFORMAÇÕES */
+
+.personagem-info {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 10%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.info-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px #b85a7b22;
+}
+
+.info-card h2 {
+    font-size: 22px;
+    color: #df4f91;
+}
+
+.info-card p {
+    line-height: 1.7;
+}
+
+
+/* FRASE */
+
+.personagem-quote {
+    padding: 100px 10%;
+
+    text-align: center;
+
+    background: #633c51;
+
+    color: white;
+}
+
+.personagem-quote p {
+    font-size: clamp(
+        25px,
+        4vw,
+        50px
+    );
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.personagem-quote span {
+    color: #ff9fc4;
+}
+
+
+/* VOLTAR */
+
+.personagem-voltar {
+    text-align: center;
+
+    padding: 60px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .personagem-hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 10%;
+    }
+
+    .personagem-imagem img {
+        width: 250px;
+    }
+
+    .personagem-info {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================
+KENEDY CLONING PROGRAM
+========================= */
+
+.clones-page {
+margin: 0;
+background: #111;
+color: #d6d6d6;
+font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.clones-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+```
+padding: 25px 8%;
+
+border-bottom: 1px solid #333;
+
+background: #171717;
+```
+
+}
+
+.clones-logo {
+font-size: 22px;
+font-weight: 700;
+
+```
+letter-spacing: 3px;
+```
+
+}
+
+.clones-logo span {
+display: block;
+
+```
+font-size: 10px;
+
+letter-spacing: 5px;
+
+color: #888;
+```
+
+}
+
+.classified {
+border: 1px solid #777;
+
+```
+padding: 8px 15px;
+
+font-size: 11px;
+
+letter-spacing: 3px;
+
+color: #aaa;
+```
+
+}
+
+/* HERO */
+
+.clones-hero {
+max-width: 1000px;
+
+```
+margin: auto;
+
+padding: 100px 10%;
+
+text-align: center;
+```
+
+}
+
+.system-text {
+font-size: 11px;
+
+```
+letter-spacing: 4px;
+
+color: #777;
+```
+
+}
+
+.clones-hero h1 {
+font-size: clamp(35px, 6vw, 80px);
+
+```
+color: #ddd;
+
+letter-spacing: 2px;
+```
+
+}
+
+.clones-intro {
+max-width: 650px;
+
+```
+margin: 30px auto;
+
+line-height: 1.8;
+
+color: #999;
+```
+
+}
+
+.warning-box {
+max-width: 650px;
+
+```
+margin: 50px auto 0;
+
+padding: 25px;
+
+border: 1px solid #444;
+
+text-align: left;
+
+background: #181818;
+```
+
+}
+
+.warning-box strong {
+color: #aaa;
+
+```
+letter-spacing: 3px;
+```
+
+}
+
+/* CATÁLOGO */
+
+.clones-section {
+padding: 80px 10%;
+
+```
+background: #161616;
+```
+
+}
+
+.clones-section > h2 {
+text-align: center;
+
+```
+color: #ddd;
+```
+
+}
+
+.clones-section > .system-text {
+text-align: center;
+}
+
+/* GRID */
+
+.clones-grid {
+max-width: 1200px;
+
+```
+margin: 50px auto 0;
+
+display: grid;
+
+grid-template-columns:
+    repeat(3, 1fr);
+
+gap: 20px;
+```
+
+}
+
+/* CARD */
+
+.clone-card {
+padding: 20px;
+
+```
+background: #1d1d1d;
+
+border: 1px solid #333;
+
+text-align: center;
+```
+
+}
+
+.clone-card h3 {
+letter-spacing: 2px;
+
+```
+color: #ccc;
+```
+
+}
+
+.clone-card p {
+font-size: 13px;
+
+```
+color: #888;
+```
+
+}
+
+/* IMAGEM */
+
+.clone-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    background: #111;
+}
+
+.clone-image img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* STATUS */
+
+.status {
+font-size: 11px !important;
+
+```
+letter-spacing: 2px;
+```
+
+}
+
+.active {
+color: #999 !important;
+}
+
+.unknown {
+color: #777 !important;
+}
+
+.error {
+color: #aaa !important;
+}
+
+/* LINKS */
+
+.clone-card a {
+display: inline-block;
+
+```
+margin-top: 15px;
+
+padding: 10px 15px;
+
+border: 1px solid #444;
+
+color: #aaa;
+
+text-decoration: none;
+
+font-size: 11px;
+
+letter-spacing: 2px;
+```
+
+}
+
+.clone-card a:hover {
+background: #333;
+}
+
+/* BLOQUEADO */
+
+.clone-card button {
+margin-top: 15px;
+
+```
+padding: 10px;
+
+background: #151515;
+
+border: 1px solid #333;
+
+color: #666;
+
+font-size: 10px;
+```
+
+}
+
+.restricted-image {
+font-size: 100px;
+
+```
+color: #333;
+```
+
+}
+
+.corrupted {
+opacity: 0.75;
+}
+
+/* DOCUMENTO */
+
+.secret-document {
+max-width: 800px;
+
+```
+margin: auto;
+
+padding: 100px 10%;
+```
+
+}
+
+.secret-document h2 {
+color: #ccc;
+}
+
+.document-content {
+margin-top: 40px;
+
+```
+padding: 35px;
+
+border: 1px solid #333;
+
+background: #171717;
+
+line-height: 1.8;
+```
+
+}
+
+.redacted {
+letter-spacing: 4px;
+
+```
+color: #777;
+```
+
+}
+
+/* FINAL */
+
+.clones-ending {
+padding: 100px 10%;
+
+```
+text-align: center;
+
+border-top: 1px solid #222;
+
+background: #101010;
+```
+
+}
+
+.clones-ending p {
+font-size: 18px;
+
+```
+letter-spacing: 3px;
+
+color: #aaa;
+```
+
+}
+
+.clones-ending span {
+font-size: 11px;
+
+```
+color: #555;
+
+letter-spacing: 2px;
+```
+
+}
+
+/* FOOTER */
+
+.clones-footer {
+padding: 40px;
+
+```
+text-align: center;
+
+background: #0b0b0b;
+
+color: #555;
+
+font-size: 10px;
+
+letter-spacing: 2px;
+```
+
+}
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+```
+.clones-grid {
+    grid-template-columns: 1fr;
+}
+
+.clones-header {
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: center;
+}
+```
+
+}
