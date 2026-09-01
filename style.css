@@ -1494,3 +1494,32 @@ letter-spacing: 2px;
 ```
 
 }
+/* =========================
+   RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .characters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
