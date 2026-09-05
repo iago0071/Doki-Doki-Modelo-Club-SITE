@@ -428,7 +428,7 @@ footer {
 
 .pagina-wonika p {
     transform: translateY(-80px);
-    font-size: 32px
+    font-size: 32px;
 }
 
 .pagina-wonika h1 {
@@ -526,17 +526,11 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 gap: 50px;
-
-```
 margin-bottom: 60px;
 padding: 50px;
-
 background: white;
 border-radius: 25px;
-
 box-shadow: 0 10px 30px #b85a7b22;
-```
-
 }
 
 .empresa-info {
@@ -566,11 +560,7 @@ color: #df4f91;
 display: flex;
 gap: 30px;
 flex-wrap: wrap;
-
-```
 margin: 30px 0;
-```
-
 }
 
 .empresa-detalhes div {
@@ -591,21 +581,13 @@ font-size: 14px;
 .empresa-logo {
 min-width: 250px;
 height: 250px;
-
-```
 display: flex;
 flex-direction: column;
-
 align-items: center;
 justify-content: center;
-
 text-align: center;
-
 border-radius: 25px;
-
 color: white;
-```
-
 }
 
 .empresa-logo h3 {
@@ -650,33 +632,21 @@ background: #1b1b1b;
 
 .empresa-bloqueada {
 padding: 14px 25px;
-
-```
 border: none;
 border-radius: 20px;
-
 background: #333;
 color: #888;
-
 font-weight: 700;
-
 cursor: not-allowed;
-```
-
 }
 
 /* AVISO FINAL */
 
 .empresas-aviso {
 padding: 100px 10%;
-
-```
 text-align: center;
-
 background: #633c51;
 color: white;
-```
-
 }
 
 .empresas-aviso h2 {
@@ -692,20 +662,18 @@ margin: auto;
 
 @media (max-width: 800px) {
 
-```
-.empresa {
-    flex-direction: column;
-    text-align: center;
-}
+    .empresa {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.empresa-logo {
-    min-width: 100%;
-}
+    .empresa-logo {
+        min-width: 100%;
+    }
 
-.empresa-detalhes {
-    justify-content: center;
-}
-```
+    .empresa-detalhes {
+        justify-content: center;
+    }
 
 }
 .jose-logo {
@@ -1078,149 +1046,84 @@ font-family: Arial, sans-serif;
 display: flex;
 justify-content: space-between;
 align-items: center;
-
-```
 padding: 25px 8%;
-
 border-bottom: 1px solid #333;
-
 background: #171717;
-```
-
 }
 
 .clones-logo {
 font-size: 22px;
 font-weight: 700;
-
-```
 letter-spacing: 3px;
-```
-
 }
 
 .clones-logo span {
 display: block;
-
-```
 font-size: 10px;
-
 letter-spacing: 5px;
-
 color: #888;
-```
-
 }
 
 .classified {
 border: 1px solid #777;
-
-```
 padding: 8px 15px;
-
 font-size: 11px;
-
 letter-spacing: 3px;
-
 color: #aaa;
-```
-
 }
 
 /* HERO */
 
 .clones-hero {
 max-width: 1000px;
-
-```
 margin: auto;
-
 padding: 100px 10%;
-
 text-align: center;
-```
-
 }
 
 .system-text {
 font-size: 11px;
-
-```
 letter-spacing: 4px;
-
 color: #777;
-```
-
 }
 
 .clones-hero h1 {
 font-size: clamp(35px, 6vw, 80px);
-
-```
 color: #ddd;
-
 letter-spacing: 2px;
-```
-
 }
 
 .clones-intro {
 max-width: 650px;
-
-```
 margin: 30px auto;
-
 line-height: 1.8;
-
 color: #999;
-```
-
 }
 
 .warning-box {
 max-width: 650px;
-
-```
 margin: 50px auto 0;
-
 padding: 25px;
-
 border: 1px solid #444;
-
 text-align: left;
-
 background: #181818;
-```
-
 }
 
 .warning-box strong {
 color: #aaa;
-
-```
 letter-spacing: 3px;
-```
-
 }
 
 /* CATÁLOGO */
 
 .clones-section {
 padding: 80px 10%;
-
-```
 background: #161616;
-```
-
 }
 
 .clones-section > h2 {
 text-align: center;
-
-```
 color: #ddd;
-```
-
 }
 
 .clones-section > .system-text {
@@ -1231,51 +1134,30 @@ text-align: center;
 
 .clones-grid {
 max-width: 1200px;
-
-```
 margin: 50px auto 0;
-
 display: grid;
-
 grid-template-columns:
     repeat(3, 1fr);
-
 gap: 20px;
-```
-
 }
 
 /* CARD */
 
 .clone-card {
 padding: 20px;
-
-```
 background: #1d1d1d;
-
 border: 1px solid #333;
-
 text-align: center;
-```
-
 }
 
 .clone-card h3 {
 letter-spacing: 2px;
-
-```
 color: #ccc;
-```
-
 }
 
 .clone-card p {
 font-size: 13px;
-
-```
 color: #888;
-```
-
 }
 
 /* IMAGEM */
@@ -1300,11 +1182,7 @@ color: #888;
 
 .status {
 font-size: 11px !important;
-
-```
 letter-spacing: 2px;
-```
-
 }
 
 .active {
@@ -1323,23 +1201,13 @@ color: #aaa !important;
 
 .clone-card a {
 display: inline-block;
-
-```
 margin-top: 15px;
-
 padding: 10px 15px;
-
 border: 1px solid #444;
-
 color: #aaa;
-
 text-decoration: none;
-
 font-size: 11px;
-
 letter-spacing: 2px;
-```
-
 }
 
 .clone-card a:hover {
@@ -1350,28 +1218,16 @@ background: #333;
 
 .clone-card button {
 margin-top: 15px;
-
-```
 padding: 10px;
-
 background: #151515;
-
 border: 1px solid #333;
-
 color: #666;
-
 font-size: 10px;
-```
-
 }
 
 .restricted-image {
 font-size: 100px;
-
-```
 color: #333;
-```
-
 }
 
 .corrupted {
@@ -1382,13 +1238,8 @@ opacity: 0.75;
 
 .secret-document {
 max-width: 800px;
-
-```
 margin: auto;
-
 padding: 100px 10%;
-```
-
 }
 
 .secret-document h2 {
@@ -1397,101 +1248,62 @@ color: #ccc;
 
 .document-content {
 margin-top: 40px;
-
-```
 padding: 35px;
-
 border: 1px solid #333;
-
 background: #171717;
-
 line-height: 1.8;
-```
-
 }
 
 .redacted {
 letter-spacing: 4px;
-
-```
 color: #777;
-```
-
 }
 
 /* FINAL */
 
 .clones-ending {
 padding: 100px 10%;
-
-```
 text-align: center;
-
 border-top: 1px solid #222;
-
 background: #101010;
-```
-
 }
 
 .clones-ending p {
 font-size: 18px;
-
-```
 letter-spacing: 3px;
-
 color: #aaa;
-```
-
 }
 
 .clones-ending span {
 font-size: 11px;
-
-```
 color: #555;
-
 letter-spacing: 2px;
-```
-
 }
 
 /* FOOTER */
 
 .clones-footer {
 padding: 40px;
-
-```
 text-align: center;
-
 background: #0b0b0b;
-
 color: #555;
-
 font-size: 10px;
-
 letter-spacing: 2px;
-```
-
 }
 
 /* CELULAR */
 
 @media (max-width: 800px) {
 
-```
-.clones-grid {
-    grid-template-columns: 1fr;
-}
+    .clones-grid {
+        grid-template-columns: 1fr;
+    }
 
-.clones-header {
-    flex-direction: column;
-
-    gap: 20px;
-
-    text-align: center;
-}
-```
+    .clones-header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 
 }
 /* =========================
