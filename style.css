@@ -1335,3 +1335,69 @@ letter-spacing: 2px;
         padding-right: 20px;
     }
 }
+* { 
+    cursor: url("assets/icones/neguinho_cursor.png"), auto; 
+}
+a,
+button,
+[onclick] {
+    cursor: url("assets/icones/neguinho_cursor.png") 5 5, pointer;
+}
+
+.bredd-final {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.bredd-final img {
+    width: 200px;
+    height: auto;
+}
+.bredd-final img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.bredd-final img:hover {
+    transform: scale(1.05);
+}
+.modal-bernardos {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.conteudo-bernardos {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.conteudo-bernardos img {
+    width: 200px;
+}
+
+.conteudo-bernardos button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.wallace-final {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.wallace-final img {
+    width: 200px;
+    height: auto;
+}

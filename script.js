@@ -9,3 +9,11 @@ function mostrarNeguinho() {
     document.getElementById("neguinho-container").style.display = "none";
     document.getElementById("easter-egg").style.display = "flex";
 }
+
+function abrirBernardos() {
+    document.getElementById("janela-bernardos").style.display = "flex";
+}
+
+function fecharBernardos() {
+    document.getElementById("janela-bernardos").style.display = "none";
+}
